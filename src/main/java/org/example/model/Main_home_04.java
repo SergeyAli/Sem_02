@@ -19,8 +19,8 @@ public class Main_home_04 {
                 a = b;
             }
             else {
-                System.out.println("НЕТ ");
-//                break;
+                System.out.println("Не возрастает ");
+                return;
             }
 
 

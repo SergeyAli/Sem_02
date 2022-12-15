@@ -17,11 +17,20 @@ public class Main_home_06 {
         }
 
         for (int i = 0; i<n; i++) {
-            if (mass[i]%10 == (mass[i]/10)%10) {
-                sum += mass[i];
+            if ((mass[i] < 100) && (mass[i] > 9) || (mass[i] > -100) && (mass[i] < -9)) {
+                sum += i ;
+
             }
+            //System.out.println(" "+sum);
+
+                for (i = 0; i<n; i++) {
+                    if (mass[i] < 0) {
+                        mass[i] = sum;
+                    }
+                    System.out.println(" " + mass[i]);
+                }
         }
-        System.out.println("Сумма элементов, у которых последняя и предпоследняя цифры равны составляетЖ " + sum);
+//        System.out.println("Сумма элементов, у которых последняя и предпоследняя цифры равны составляетЖ " + sum);
 
     }
 
